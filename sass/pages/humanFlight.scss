@@ -1,0 +1,160 @@
+@import url(../variables/variables.scss);
+
+.section-human-flight-1 {
+    background-image: url('/img/humanFlight/01.jpg');
+  }
+  .section-human-flight-2 {
+    background-image: url('/img/humanFlight/02.jpg');
+  }
+  .section-human-flight-3 {
+    background-image: url('/img/humanFlight/03.jpg');
+  }
+  .section-human-flight-4 {
+    background-image: url('/img/humanFlight/04.jpg');
+  }
+  .section-human-flight-5 {
+    background-image: url('/img/humanFlight/05.jpg');
+  }
+  
+  .section-human-flight-1 {
+  
+    .title-human-flight {
+      font-size: 7rem;
+    }
+    .subtitle-human-flight {
+      margin-top: 20px;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+  
+  .paragraph-description-human-flight {
+    width: 800px;
+    margin: auto;
+    color: #d8d8d8;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  
+  .container-human-flight-right {
+    width: 45%;
+    justify-self: end;
+  }
+  
+  .container-human-flight-left {
+    width: 45%;
+    margin-left: 5%;
+  }
+  
+  .title-section {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .subtitle-section {
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-break: none;
+  }
+  .word-break {
+    display: inline-block;
+  }
+  
+  @media (max-width: 1200px) {
+    .title-section {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 1020px) {
+    .section-human-flight-1 {
+  
+      .title-human-flight {
+        font-size: 6rem;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .paragraph-description-human-flight {
+      width: auto;
+      font-size: 1.2rem;
+    }
+    .container-human-flight-right {
+      width: auto;
+      margin-right: 10%;
+    }
+    .subtitle-section {
+      width: 250px;
+    }
+    #width-moon {
+      width: 220px; 
+    }
+    .word-break {
+      display: block;
+    }
+  }
+  
+  
+  
+  @media (max-width: 767px) {
+    .section-human-flight-1 {
+  
+      .title-human-flight {
+        font-size: 5rem;
+      }
+    }
+    .container-human-flight-left {
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container-human-flight-right {
+      margin-right: 2%;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .section-human-flight-1 {
+  
+      .title-human-flight {
+        font-size: 4rem;
+      }
+      .subtitle-human-flight {
+        font-size: 1.5rem;
+      }
+    }
+    .paragraph-description-human-flight {
+      font-size: 1.1rem;
+    }
+    .title-section {
+      font-size: 2.5rem;
+    }
+    .subtitle-section {
+      width: 230px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .section-human-flight-1 {
+  
+      .title-human-flight {
+        font-size: 3rem;
+      }
+      .subtitle-human-flight {
+        font-size: 1.25rem;
+      }
+    }
+  
+    @media (max-width: 320px) {
+      .section-human-flight-1 {
+  
+        .title-human-flight {
+          font-size: 2.5rem;
+        }
+      }
+      .title-section {
+        font-size: 2.2rem;
+      }
+    }
+  }

@@ -1,56 +1,118 @@
-@import '../variables.scss';
-
-.header {
+* {
+    color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $link-hover;
+    transition: 300ms linear;
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #000;
+  }
+  
+  #header {
     font-size: 12px;
     font-weight: bold;
-}
-
-#navItem{
-    &:hover {
-        color: $hoverColor;
+    align-self: start;
+  
+    .logo-onebitcode {
+      width: 240px;
+      margin-left: -10px;
+      margin-right: 40px;
     }
-}
-
-.container00 {
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.arrowDown {
-    display: inline-block;
+  
+    #link-hover {
+    transition: 500ms linear;
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
+  
+  .arrow-down {
     width: 90px;
-    margin-top: 5px;
-}
-
-.logoPc {
-    width: 240px;
-    margin-left: -10px;
-    margin-right: 40px;
-}
-
-#button {
+  }
+  
+  #button {
     padding: $padding-button;
-    border: 2px solid white;
-}
-
-/* MEDIA QUERY */
-
-@media (max-width: 405px) {
-    .logoPc {
+    border: 2px solid #fff;
+  }
+  
+  section {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #footer {
+    min-height: 70vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    .paragraph-footer {
+      font-size: 1.2rem;
+    }
+  
+    .icon {
+      font-size: 25px;
+      transition: 300ms linear;
+      &:hover {
+        color: $link-hover;
+      }
+    }
+    .copy {
+      font-size: 13px;
+      color: $link-hover;
+    }
+  }
+  
+  // Media Query
+  @media (max-width: 765px) {
+    #header {
+      .logo-onebitcode {
+        width: 200px;
+      }
+    }
+    #footer {
+      .paragraph-footer {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media (max-width: 405px) {
+    #header {
+      .logo-onebitcode {
         width: 180px;
-        margin-top: 15px;
+      }
     }
-
-    .footer {
-        font-size: 10px;
+    #footer {
+      font-size: 10px;
+  
+      .paragraph-footer {
+        font-size: .9rem;
+      }
     }
-}
-
-@media (max-width: 350px) {
-    .logoPc {
+  }
+  
+  @media (max-width: 350px) {
+    #header {
+      .logo-onebitcode {
         width: 150px;
-        margin-top: 15px;
+        margin-right: 0px;
+      }
     }
-}
+  }
